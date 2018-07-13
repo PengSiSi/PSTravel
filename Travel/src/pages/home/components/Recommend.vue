@@ -7,7 +7,7 @@
         class="item border-bottom"
         v-for="item of recommendList"
         :key="item.id"
-        :to="'/detail' + item.id"
+        :to="{name:'Detail',params :{id:item.id}}"
       >
       <!-- <li
         class="item border-bottom"

@@ -1,6 +1,7 @@
 <template>
   <div>
     <banner></banner>
+    Detail
   </div>
 </template>
 
@@ -11,6 +12,9 @@ export default {
   name: 'Detail',
   components: {
     Banner
+  },
+  mounted () {
+    console.log(this.$router.path)
   }
 }
 </script>
